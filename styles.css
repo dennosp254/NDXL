@@ -24,7 +24,16 @@ li {
 span {
     color: #1d7a00;
 }
-
+h3 {
+    color: #022b01;
+    font-size: xx-large;
+    font-weight: 400;
+}
+#about p {
+    font-size: larger;
+    font-weight: 300;
+    color: #444;
+}
 #navigation {
     position: fixed;
     top: 0;
@@ -61,7 +70,7 @@ nav ul li:hover {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.841)),
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(5, 41, 0, 0.841)),
                 url('images/home_bg.jpg') no-repeat center center/cover;
     color: #fff;
     justify-content: center;
@@ -79,10 +88,10 @@ nav ul li:hover {
     background: rgba(46, 46, 46, 0.295);
     backdrop-filter: blur(5px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.342);
+    border: 1px solid rgba(133, 132, 132, 0.342);
     border-radius: 15px;
     margin: auto;
-    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.603);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.788);
 }
 .home_content {
     text-align: center;
@@ -123,4 +132,45 @@ nav ul li:hover {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 400;
+}
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 100px;
+}
+
+.card img {
+    height: 400px;
+    border-radius: 30px;
+}
+body {
+    flex-wrap: wrap;
+}
+.button {
+    max-width: fit-content;
+    background-color: #022b01;
+    padding: 10px;
+    border-radius: 10px;
+}
+.button:hover {
+    border: 1px solid;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.button a:hover {
+    color: #022b01;
+    font-size: large;
+    font-weight: 600;
+}
+.text {
+    padding: 30px;
+}
+
+/* Values */
+#values {
+    padding: 100px;
+}
+.value_row {
+    display: flex;
 }
