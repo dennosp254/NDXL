@@ -21,7 +21,15 @@ a:hover {
 li {
     list-style: none;
 }
+span {
+    color: #1d7a00;
+}
+
 #navigation {
+    position: fixed;
+    top: 0;
+    width: 94%;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,35 +59,45 @@ nav ul li:hover {
 /* Home */
 #home {
     display: flex;
-    height: 92vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.541)),
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.841)),
                 url('images/home_bg.jpg') no-repeat center center/cover;
     color: #fff;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .home_pg {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    padding: 2rem;
+    text-align: center;
+    padding: 10px;
+    background: rgba(46, 46, 46, 0.295);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.342);
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.603);
 }
 .home_content {
     text-align: center;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 14px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    border-radius: 10px;
 }
 .home_content h1 {
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 500;
+    text-shadow: 12px 14px 16px rgba(0, 0, 0, 0.842);
 }
 .home_content p {
-    font-size: 3.8rem;
+    font-size: 3rem;
     font-weight: 100;
+    text-shadow: 15px 14px 16px rgba(0, 0, 0, 0.842);
 }
 .btn {
     font-size: 2rem;
@@ -89,12 +107,20 @@ nav ul li:hover {
     color: #022b01;
     height: 80px;
     width: 80px;
-    margin-top: 100px;
     border-radius: 50%;
     background-color: #fff;
 }
 .btn:hover {
     color: #fff;
     background-color: #022b01;
-    box-shadow: 0 1px 32px rgba(152, 255, 84, 0.7);
+    box-shadow: 0 1px 32px rgba(255, 255, 255, 0.7);
+}
+#about {
+    height: 100vh;
+}
+.topic {
+    padding: 150px 0 50px 0;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
 }
