@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
     --purple: #3a0347;
-    --grey: #222;
+    --grey: #022b01;
     --hover: #3cff00;
 }
 
@@ -28,7 +28,7 @@ li {
     justify-items: center;
     color: #fff;
     background-color: var(--grey);
-    padding: 0.5rem 4rem;
+    padding: 0.8rem 4rem;
 }
 nav {
     display: flex;
@@ -44,4 +44,57 @@ nav ul li {
     align-items: center;
     padding-left: 2rem;
 }
-nav ul li 
+nav ul li:hover {
+    font-size: large;
+}
+
+/* Home */
+#home {
+    display: flex;
+    height: 92vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.541)),
+                url('images/home_bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.home_pg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.home_content {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.home_content h1 {
+    font-size: 6rem;
+    font-weight: 500;
+}
+.home_content p {
+    font-size: 3.8rem;
+    font-weight: 100;
+}
+.btn {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #022b01;
+    height: 80px;
+    width: 80px;
+    margin-top: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.btn:hover {
+    color: #fff;
+    background-color: #022b01;
+    box-shadow: 0 1px 32px rgba(152, 255, 84, 0.7);
+}
